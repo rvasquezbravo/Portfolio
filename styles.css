@@ -12,7 +12,7 @@ body {
 header {
     background: linear-gradient(90deg, #ff8a00, #e52e71);
     color: #fff;
-    padding: 60px 0; /* Increased padding to accommodate larger picture and space */
+    padding: 80px 0; /* Increased padding to ensure visibility */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -24,13 +24,11 @@ header {
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    position: absolute;
-    top: 60px; /* Adjusted to move the picture down */
-    left: calc(50% - 100px); /* Adjusted for new width */
+    margin-top: 20px; /* Adjusted margin to separate from header */
 }
 
 header h1 {
-    margin: 250px 0 20px; /* Adjusted to move the text down */
+    margin-top: 20px; /* Adjusted margin to separate from profile picture */
     font-size: 2.5em;
     letter-spacing: 2px;
 }

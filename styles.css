@@ -10,12 +10,23 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
     color: #fff;
     padding: 80px 0; /* Increased padding to ensure visibility */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    overflow: hidden; /* Ensures the animated background doesn't overflow */
+    background: url('cybersecurity-background.gif') center center/cover;
+    animation: animateBackground 20s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 .profile-pic {

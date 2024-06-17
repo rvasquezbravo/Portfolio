@@ -10,51 +10,50 @@ body {
 }
 
 header {
+    background-image: url('https://media.istockphoto.com/id/1420039900/photo/cyber-security-ransomware-email-phishing-encrypted-technology-digital-information-protected.jpg?s=2048x2048&w=is&k=20&c=H2DW0WcG6v9JZow-0XW31UVcCV63q41zpJk-d8kmIY0='); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 80px 0; /* Increased padding to ensure visibility */
+    padding: 80px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    overflow: hidden; /* Ensures the animated background doesn't overflow */
-    background: url('https://media3.giphy.com/media/IcZhFmufozDCij3p22/200.webp?cid=ecf05e47e3xh9y2cgdobqlj7nh45i5jqj9hrjk2z8mkpr9rv&ep=v1_gifs_related&rid=200.webp&ct=g') center center/cover;
-    animation: animateBackground 20s linear infinite;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@keyframes animateBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .profile-pic {
-    width: 200px; /* Increased size */
-    height: 200px; /* Increased size */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    margin-top: 20px; /* Adjusted margin to separate from header */
+    margin-bottom: 20px;
 }
 
 header h1 {
-    margin-top: 20px; /* Adjusted margin to separate from profile picture */
     font-size: 2.5em;
     letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0; /* Adjusted margin for better spacing */
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -96,109 +95,13 @@ section h2 {
     color: #e52e71;
 }
 
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-ul li {
-    background: #ffefef;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    color: #333;
-}
-
-.project {
-    background: #e0f7fa;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border-left: 5px solid #ff8a00;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #e52e71;
-}
-
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #ff8a00;
-    outline: none;
-}
-
-form button {
-    padding: 10px 20px;
-    border: none;
-    background: linear-gradient(45deg, #ff8a00, #e52e71);
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.1em;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-form button:hover {
-    background: linear-gradient(45deg, #e52e71, #ff8a00);
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
 footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    header {
-        padding: 60px 0;
-    }
-
-    .profile-pic {
-        width: 150px;
-        height: 150px;
-    }
-
-    header h1 {
-        font-size: 2em;
-        margin-top: 120px;
-    }
-
-    nav ul {
-        margin-top: 20px;
-    }
-
-    nav ul li a {
-        padding: 12px 20px;
-        font-size: 1em;
-    }
 }

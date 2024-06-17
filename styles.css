@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('https://media.istockphoto.com/id/1471399862/vector/isometric-protection-concept-protect-mechanism-system-privacy.jpg?s=612x612&w=0&k=20&c=CJtEP_N9LT7KrzjBNPLUL9SEPWaL1CV8EfdRUZCpc88='); /* Path to your background image */
+    background-image: url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Path to your background image */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -35,7 +35,7 @@ header {
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Center the profile picture horizontally */
 }
 
 header h1 {

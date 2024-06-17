@@ -16,7 +16,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden; /* Ensures the animated background doesn't overflow */
-    background: url('cybersecurity-background.gif') center center/cover;
+    background: url('https://media3.giphy.com/media/4H3Ii5eLChYul9p7NL/200w.webp?cid=ecf05e4755y8eb7ovd7hch6wilvlcvbyoom1l3kfiup4whnl&ep=v1_gifs_related&rid=200w.webp&ct=g') center center/cover;
     animation: animateBackground 20s linear infinite;
 }
 

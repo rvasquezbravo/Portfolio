@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image */
+    background-image: url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Path to your background image */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -30,13 +30,12 @@ header {
 }
 
 .profile-pic {
-    width: 20%; /* Adjust percentage as needed */
-    max-width: 200px; /* Set maximum width for responsiveness */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    margin: 0 auto 20px; /* Center the profile picture horizontally */
+    margin: 20px auto; /* Center the profile picture horizontally and add margin around it */
 }
 
 header h1 {

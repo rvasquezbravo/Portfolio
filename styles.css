@@ -18,20 +18,22 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Center align items horizontally */
 }
 
 .header-content {
-    max-width: 900px;
+    max-width: 90%; /* Adjust maximum width as needed */
     margin: 0 auto;
+    text-align: center;
 }
 
 .profile-pic {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
+    width: 30%; /* Adjust percentage width as needed */
+    max-width: 250px; /* Set maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
@@ -76,7 +78,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 900px;
+    max-width: 90%; /* Adjust maximum width as needed */
     margin: auto;
 }
 

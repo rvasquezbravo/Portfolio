@@ -3,86 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Infrastructure Security Engineer</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://media.licdn.com/dms/image/C5603AQFx6-3TaCeEtw/profile-displayphoto-shrink_800_800/0/1654842580653?e=1724284800&v=beta&t=s3Iul4wYahqAViXqNEBY7GT6xW9ur8B270ukayQ4qvU" alt="Profile Picture" class="profile-pic" alt="Profile Picture" class="profile-pic">
-            <h1>Rafael Vasquez Bravo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#companies">Companies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#countries">Countries</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Passionate Infrastructure Security Engineer with a strong background in designing, implementing, and managing secure infrastructure solutions. Dedicated to ensuring the highest levels of system and data security.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
+
+<header>
+    <div class="header-content">
+        <img src="https://media.licdn.com/dms/image/C5603AQFx6-3TaCeEtw/profile-displayphoto-shrink_800_800/0/1654842580653?e=1724284800&v=beta&t=s3Iul4wYahqAViXqNEBY7GT6xW9ur8B270ukayQ4qvU" alt="Profile Picture" class="profile-pic">
+        <h1>Rafael M. Vasquez Bravo</h1>
+        <nav>
             <ul>
-                <li>Network Security</li>
-                <li>Penetration Testing</li>
-                <li>Cloud Security</li>
-                <li>Incident Response</li>
-                <li>Security Audits</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <p>Details of your certifications...</p>
-        </section>
-        <section id="companies">
-            <h2>Companies</h2>
-            <p>Details of the companies you have worked for...</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Alpha</h3>
-                <p>Implemented a comprehensive security solution for a multinational corporation, ensuring compliance with international standards.</p>
-            </div>
-            <div class="project">
-                <h3>Project Beta</h3>
-                <p>Developed and executed penetration testing strategies that identified and mitigated critical vulnerabilities in a cloud-based environment.</p>
-            </div>
-        </section>
-        <section id="languages">
-            <h2>Languages</h2>
-            <p>Details of the languages you speak...</p>
-        </section>
-        <section id="countries">
-            <h2>Countries</h2>
-            <p>Details of the countries you have worked in...</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Rafael Vasquez Bravo</p>
-    </footer>
-    <script src="script.js"></script>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate Infrastructure Security Engineer with a strong background in designing, implementing, and managing secure infrastructure solutions. Dedicated to ensuring the highest levels of system and data security.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Firewall Configuration</li>
+            <li>Vulnerability Assessment</li>
+            <li>Incident Response</li>
+            <li>Encryption Technologies</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Information Systems Security Professional (CISSP)</li>
+            <li>CompTIA Security+</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+        </ul>
+    </section>
+
+    <section id="companies">
+        <h2>Companies</h2>
+        <ul>
+            <li>ABC Security Solutions</li>
+            <li>XYZ Cyber Defense</li>
+            <li>GlobalTech Networks</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Implementation of Secure VPN Solutions</li>
+            <li>Development of Incident Response Plans</li>
+            <li>Enhancement of Network Access Control Systems</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="#" method="POST" onsubmit="return submitForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Rafael M. Vasquez Bravo. All rights reserved.</p>
+</footer>
+
+<script>
+    function submitForm() {
+        // Simulate form submission (replace with actual backend logic)
+        // For demonstration purposes, simply show a success message
+        var statusMessage = document.getElementById('statusMessage');
+        statusMessage.innerHTML = 'Message sent successfully!';
+        statusMessage.style.color = 'green';
+        return false; // Prevent actual form submission
+    }
+</script>
+
 </body>
 </html>

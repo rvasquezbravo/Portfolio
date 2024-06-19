@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif; /* Fallback font */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,6 +40,7 @@ header h1 {
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
+    font-family: 'Indie Flower', cursive; /* Apply the fun font */
 }
 
 nav ul {
@@ -61,6 +62,7 @@ nav ul li a {
     font-size: 1.2em; /* Adjusted font size */
     text-transform: uppercase;
     transition: color 0.3s;
+    font-family: 'Indie Flower', cursive; /* Apply the fun font */
 }
 
 nav ul li a:hover {

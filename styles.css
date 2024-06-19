@@ -17,7 +17,7 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    padding: 40px 20px; /* Added padding to center content */
+    padding: 100px 20px; /* Increased padding to center content and adjust size */
 }
 
 .header-content {
@@ -27,12 +27,12 @@ header {
 }
 
 .profile-pic {
-    width: 150px; /* Adjusted size for smaller screens */
-    height: 150px; /* Adjusted size for smaller screens */
+    width: 250px; /* Increased size of profile picture */
+    height: 250px; /* Increased size of profile picture */
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    margin: 20px auto; /* Center the profile picture horizontally and add margin around it */
+    margin-top: 20px; /* Adjusted margin for spacing */
 }
 
 header h1 {
@@ -109,8 +109,8 @@ footer p {
     }
 
     .profile-pic {
-        width: 100px; /* Adjusted size for smaller screens */
-        height: 100px; /* Adjusted size for smaller screens */
+        width: 150px; /* Adjusted size for smaller screens */
+        height: 150px; /* Adjusted size for smaller screens */
         margin: 10px auto; /* Reduce margin for smaller screens */
     }
 

@@ -17,7 +17,7 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: auto; /* Adjusted to fit content */
+    height: 100vh; /* Adjusted to cover full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,23 +133,4 @@ footer p {
     }
 
     nav ul li {
-        margin: 5px; /* Adjusted margin for spacing */
-    }
-
-    nav ul li a {
-        padding: 10px 16px; /* Adjusted padding for button size */
-        font-size: 1em; /* Adjusted font size for smaller screens */
-    }
-
-    main {
-        padding: 10px; /* Reduced padding for sections */
-    }
-
-    section h2 {
-        font-size: 1.5em; /* Adjusted font size for section headings */
-    }
-
-    footer {
-        padding: 10px; /* Reduced padding for footer */
-    }
-}
+        margin: 5px; /* Adjusted margin for

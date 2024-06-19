@@ -17,11 +17,6 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 100vh; /* Adjusted to cover full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 40px 20px; /* Added padding to center content */
 }
 
@@ -47,38 +42,29 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
 }
 
-.top-nav, .bottom-nav {
-    margin-top: 20px;
-}
-
-.top-nav ul, .bottom-nav ul {
+nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0; /* Adjusted margin for spacing */
     display: flex;
     justify-content: center;
 }
 
-.top-nav ul li, .bottom-nav ul li {
-    margin: 10px; /* Adjusted margin for spacing */
+nav ul li {
+    margin: 0 10px; /* Adjusted margin for spacing */
 }
 
-.top-nav ul li a, .bottom-nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 12px 18px; /* Adjusted padding for button size */
-    border-radius: 30px; /* Rounded corners */
     font-size: 1.2em; /* Adjusted font size */
-    background: linear-gradient(45deg, #0056b3, #003d99); /* Darker blue gradient */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
-.top-nav ul li a:hover, .bottom-nav ul li a:hover {
-    background: linear-gradient(45deg, #003d99, #0056b3);
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
 }
 
 main {
@@ -131,12 +117,12 @@ footer p {
         margin-bottom: 10px;
     }
 
-    .top-nav ul, .bottom-nav ul {
+    nav ul {
+        margin-top: 10px; /* Adjusted margin for spacing */
         flex-wrap: wrap; /* Allow wrapping for smaller screens */
-        justify-content: center;
     }
 
-    .top-nav ul li, .bottom-nav ul li {
+    nav ul li {
         margin: 5px; /* Adjusted margin for spacing */
         width: 100%; /* Full width for buttons */
         text-align: center; /* Center align text */

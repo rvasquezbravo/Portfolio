@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* Import a new font for the h1 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Import the new font for the h1 */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -42,10 +42,10 @@ header {
 }
 
 header h1 {
-    font-family: 'Poppins', sans-serif; /* New font for h1 */
-    font-size: 5em; /* Increased font size */
+    font-family: 'Lobster', cursive; /* New font for h1 */
+    font-size: 3em; /* Increased font size */
     letter-spacing: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
 }
 

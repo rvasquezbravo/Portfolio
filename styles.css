@@ -47,20 +47,23 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
 }
 
-nav ul {
+.top-nav, .bottom-nav {
+    margin-top: 20px;
+}
+
+.top-nav ul, .bottom-nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0; /* Adjusted margin for spacing */
+    margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     justify-content: center;
 }
 
-nav ul li {
+.top-nav ul li, .bottom-nav ul li {
     margin: 10px; /* Adjusted margin for spacing */
 }
 
-nav ul li a {
+.top-nav ul li a, .bottom-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -72,7 +75,7 @@ nav ul li a {
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-nav ul li a:hover {
+.top-nav ul li a:hover, .bottom-nav ul li a:hover {
     background: linear-gradient(45deg, #003d99, #0056b3);
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -128,24 +131,15 @@ footer p {
         margin-bottom: 10px;
     }
 
-    nav ul {
-        margin-top: 10px; /* Adjusted margin for spacing */
-        flex-direction: column; /* Stack items vertically */
+    .top-nav ul, .bottom-nav ul {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: center;
     }
 
-    nav ul li {
+    .top-nav ul li, .bottom-nav ul li {
         margin: 5px; /* Adjusted margin for spacing */
         width: 100%; /* Full width for buttons */
         text-align: center; /* Center align text */
-    }
-
-    nav ul li.mobile-hidden {
-        display: none; /* Hide specific menu items */
-    }
-
-    /* Distribute buttons */
-    nav ul li:nth-child(-n+3) {
-        order: -1; /* Move first three items to the top */
     }
 
     /* Ensure footer stays at bottom */

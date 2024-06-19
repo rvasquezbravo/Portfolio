@@ -130,7 +130,26 @@ footer p {
 
     nav ul {
         margin-top: 10px; /* Adjusted margin for spacing */
+        flex-direction: column; /* Stack items vertically */
     }
 
     nav ul li {
-        margin: 5px; /* Adjusted margin for
+        margin: 5px; /* Adjusted margin for spacing */
+        width: 100%; /* Full width for buttons */
+        text-align: center; /* Center align text */
+    }
+
+    nav ul li.mobile-hidden {
+        display: none; /* Hide specific menu items */
+    }
+
+    /* Distribute buttons */
+    nav ul li:nth-child(-n+3) {
+        order: -1; /* Move first three items to the top */
+    }
+
+    /* Ensure footer stays at bottom */
+    main {
+        min-height: calc(100vh - 380px); /* Adjust as needed */
+    }
+}

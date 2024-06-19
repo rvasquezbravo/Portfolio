@@ -63,16 +63,16 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 25px;
+    padding: 20px 30px; /* Increased padding for bigger buttons */
     border-radius: 8px;
-    font-size: 1.1em;
-    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    font-size: 1.2em; /* Increased font size */
+    background: linear-gradient(45deg, #007bff, #00d2ff); /* Blue gradient */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 nav ul li a:hover {
-    background: linear-gradient(45deg, #e52e71, #ff8a00);
+    background: linear-gradient(45deg, #00d2ff, #007bff);
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -92,10 +92,10 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #ff8a00;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    color: #e52e71;
+    color: #00d2ff;
 }
 
 footer {
@@ -140,8 +140,8 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 1em; /* Adjust font size for smaller screens */
-        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 1.1em; /* Adjust font size for smaller screens */
+        padding: 15px 25px; /* Adjust padding for smaller screens */
     }
 
     main {

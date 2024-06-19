@@ -43,9 +43,9 @@ header {
 
 header h1 {
     font-family: 'Poppins', sans-serif; /* New font for h1 */
-    font-size: 3em; /* Increased font size */
+    font-size: 5em; /* Increased font size */
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
 }
 

@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image */
+    background-image: url('Background.avif'); /* Path to your background image */
     background-size: cover;
     background-position: center;
     color: #fff;

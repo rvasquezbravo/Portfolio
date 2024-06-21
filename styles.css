@@ -18,7 +18,6 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     padding: 100px 20px; /* Increased padding to center content and adjust size */
-    height: 100vh; /* Make the header full height of the viewport */
 }
 
 .header-content {
@@ -50,11 +49,10 @@ nav ul {
     margin: 20px 0 0; /* Adjusted margin for spacing */
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul li {
-    margin: 10px; /* Adjusted margin for spacing */
+    margin: 0 10px; /* Adjusted margin for spacing */
 }
 
 nav ul li a {
@@ -63,15 +61,12 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.2em; /* Adjusted font size */
     text-transform: uppercase;
+    transition: color 0.3s;
     font-family: 'Indie Flower', cursive; /* Apply the fun font */
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-    border-radius: 8px;
-    transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+    color: #ffd700; /* Change color on hover */
 }
 
 main {
@@ -107,42 +102,6 @@ footer p {
     margin: 0;
 }
 
-.about-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for About section */
-    background-size: cover;
-    background-position: center;
-}
-
-.skills-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Skills section */
-    background-size: cover;
-    background-position: center;
-}
-
-.certifications-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Certifications section */
-    background-size: cover;
-    background-position: center;
-}
-
-.companies-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Companies section */
-    background-size: cover;
-    background-position: center;
-}
-
-.projects-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Projects section */
-    background-size: cover;
-    background-position: center;
-}
-
-.contact-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Contact section */
-    background-size: cover;
-    background-position: center;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
     .header-content {
@@ -150,16 +109,29 @@ footer p {
     }
 
     .profile-pic {
-        width: 150px; /* Adjusted size */
-        height: 150px; /* Adjusted size */
+        width: 150px; /* Adjusted size for smaller screens */
+        height: 150px; /* Adjusted size for smaller screens */
+        margin: 10px auto; /* Reduce margin for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+        margin-bottom: 10px;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        margin-top: 10px; /* Adjusted margin for spacing */
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
     }
 
     nav ul li {
-        margin: 5px 0; /* Adjusted margin for spacing */
+        margin: 5px; /* Adjusted margin for spacing */
+        width: 100%; /* Full width for buttons */
+        text-align: center; /* Center align text */
+    }
+
+    /* Ensure footer stays at bottom */
+    main {
+        min-height: calc(100vh - 380px); /* Adjust as needed */
     }
 }

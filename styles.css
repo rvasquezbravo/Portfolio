@@ -10,6 +10,7 @@ header {
     color: white;
     text-align: center;
     padding: 100px 0;
+    border-bottom: 10px solid white;
 }
 
 header .container {
@@ -56,27 +57,29 @@ nav ul li a:hover {
 }
 
 #skills {
-    background: #2c3e50;
+    background: #3b5998;
 }
 
 #certifications {
-    background: #34495e;
+    background: #8b9dc3;
 }
 
 #locations {
-    background: #16a085;
+    background: #dfe3ee;
+    color: #333;
 }
 
 #projects {
-    background: #27ae60;
+    background: #3b5998;
 }
 
 #social {
-    background: #2980b9;
+    background: #8b9dc3;
 }
 
 #contact {
-    background: #8e44ad;
+    background: #dfe3ee;
+    color: #333;
 }
 
 .section h2 {

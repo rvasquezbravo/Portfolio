@@ -103,23 +103,20 @@ footer p {
 }
 
 .skills-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Skills section */
+    background-image: url('cybersecurity-background.jpg'); /* Path to your cybersecurity-themed background image */
     background-size: cover;
     background-position: center;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-    padding: 100px 20px; /* Increased padding to match header */
-    height: 100vh; /* Make the section full height of the viewport */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 100px 20px; /* Increased padding to center content and adjust size */
 }
 
 .skills-section .section-content {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
     max-width: 90%;
     margin: 0 auto;
-    text-align: left;
+
 
 }
 

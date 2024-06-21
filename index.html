@@ -3,113 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Cybersecurity Expert Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <div class="header-content">
-        <img src="https://media.licdn.com/dms/image/C5603AQFx6-3TaCeEtw/profile-displayphoto-shrink_800_800/0/1654842580653?e=1724284800&v=beta&t=s3Iul4wYahqAViXqNEBY7GT6xW9ur8B270ukayQ4qvU" alt="Profile Picture" class="profile-pic" alt="Profile Picture" class="profile-pic" alt="Profile Picture" class="profile-pic">
-        <h1>Rafael Vasquez Bravo</h1>
+    <header>
+        <h1>Jane Doe - Cybersecurity Expert</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#companies">Companies</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#locations">Countries & Languages</a></li>
+                <li><a href="#companies">Companies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </div>
-</header>
+    </header>
 
-<main>
     <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>Passionate Infrastructure Security Engineer with a strong background in designing, implementing, and managing secure infrastructure solutions. Dedicated to ensuring the highest levels of system and data security.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>Hello! I'm Jane Doe, a cybersecurity expert with over 10 years of experience in protecting data and systems. I specialize in network security, ethical hacking, and risk assessment.</p>
     </section>
 
     <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>Network Security</li>
-                <li>Firewall Configuration</li>
-                <li>Vulnerability Assessment</li>
-                <li>Incident Response</li>
-                <li>Encryption Technologies</li>
-            </ul>
-        </div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Ethical Hacking</li>
+            <li>Risk Assessment</li>
+            <li>Penetration Testing</li>
+            <li>Security Audits</li>
+        </ul>
     </section>
 
     <section id="certifications">
-        <div class="section-content">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Cisco Certified Network Professional (CCNP)</li>
-                <li>Microsoft Server Administrator</li>
-                <li>Checkpoint Security Administrator</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="companies">
-        <div class="section-content">
-            <h2>Companies</h2>
-            <ul>
-                <li>ABC Security Solutions</li>
-                <li>XYZ Cyber Defense</li>
-                <li>GlobalTech Networks</li>
-            </ul>
-        </div>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Information Systems Security Professional (CISSP)</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+            <li>CompTIA Security+</li>
+            <li>Certified Information Security Manager (CISM)</li>
+        </ul>
     </section>
 
     <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li>Implementation of Secure VPN Solutions</li>
-                <li>Development of Incident Response Plans</li>
-                <li>Enhancement of Network Access Control Systems</li>
-            </ul>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project A</h3>
+            <p>Developed a comprehensive security protocol for a multinational company, reducing data breaches by 40%.</p>
         </div>
+        <div class="project">
+            <h3>Project B</h3>
+            <p>Led a team of ethical hackers in a successful penetration testing exercise for a financial institution.</p>
+        </div>
+    </section>
+
+    <section id="locations">
+        <h2>Countries & Languages</h2>
+        <ul>
+            <li>USA - English</li>
+            <li>Germany - German</li>
+            <li>France - French</li>
+        </ul>
+    </section>
+
+    <section id="companies">
+        <h2>Companies</h2>
+        <ul>
+            <li>Company A</li>
+            <li>Company B</li>
+            <li>Company C</li>
+        </ul>
     </section>
 
     <section id="contact">
-        <div class="section-content">
-            <h2>Contact Me</h2>
-            <form id="contactForm" action="#" method="POST" onsubmit="return submitForm()">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">Submit</button>
-            </form>
-            <p id="statusMessage"></p>
-        </div>
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
     </section>
-</main>
 
-<footer>
-    <p>&copy; 2024 Rafael M. Vasquez Bravo. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+    </footer>
 
-<script>
-    function submitForm() {
-        // Simulate form submission (replace with actual backend logic)
-        // For demonstration purposes, simply show a success message
-        var statusMessage = document.getElementById('statusMessage');
-        statusMessage.innerHTML = 'Message sent successfully!';
-        statusMessage.style.color = 'green';
-        return false; // Prevent actual form submission
-    }
-</script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>

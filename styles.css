@@ -1,139 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
 body {
-    font-family: 'Arial', sans-serif; /* Fallback font */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your cybersecurity-themed background image */
-    background-size: cover;
-    background-position: center;
+    background-color: #333;
     color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding: 100px 20px; /* Increased padding to center content and adjust size */
-}
-
-.header-content {
-    max-width: 90%; /* Adjust maximum width as needed */
-    margin: 0 auto;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 250px; /* Increased size of profile picture */
-    height: 250px; /* Increased size of profile picture */
-    border-radius: 50%;
-    border: 5px solid #fff;
-    object-fit: cover;
-    margin-top: 20px; /* Adjusted margin for spacing */
 }
 
 header h1 {
-    font-size: 3em; /* Increased font size */
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to make the text stand out */
-    font-family: 'Indie Flower', cursive; /* Apply the fun font */
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0; /* Adjusted margin for spacing */
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px; /* Adjusted margin for spacing */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em; /* Adjusted font size */
-    text-transform: uppercase;
-    transition: color 0.3s;
-    font-family: 'Indie Flower', cursive; /* Apply the fun font */
-}
-
-nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
-}
-
-main {
-    padding: 20px;
-    max-width: 90%; /* Adjust maximum width as needed */
-    margin: auto;
 }
 
 section {
-    margin-bottom: 40px;
-    padding: 20px;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section h2 {
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #003d99;
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.project {
+    margin: 1rem 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 5px 0;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: #fff;
-    margin-top: 20px; /* Adjust margin as needed */
-}
-
-footer p {
-    margin: 0;
-}
-
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .header-content {
-        max-width: 100%;
-    }
-
-    .profile-pic {
-        width: 150px; /* Adjusted size for smaller screens */
-        height: 150px; /* Adjusted size for smaller screens */
-        margin: 10px auto; /* Reduce margin for smaller screens */
-    }
-
-    header h1 {
-        font-size: 2.5em; /* Adjust font size for smaller screens */
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        margin-top: 10px; /* Adjusted margin for spacing */
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    }
-
-    nav ul li {
-        margin: 5px; /* Adjusted margin for spacing */
-        width: 100%; /* Full width for buttons */
-        text-align: center; /* Center align text */
-    }
-
-    /* Ensure footer stays at bottom */
-    main {
-        min-height: calc(100vh - 380px); /* Adjust as needed */
-    }
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }

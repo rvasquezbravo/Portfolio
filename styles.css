@@ -78,7 +78,8 @@ main {
 section {
     margin-bottom: 40px;
     padding: 20px;
-
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -101,23 +102,7 @@ footer p {
     margin: 0;
 }
 
-.skills-section {
-    background-image: url('cybersecurity-background.jpg'); /* Path to your cybersecurity-themed background image */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding: 100px 20px; /* Increased padding to center content and adjust size */
-}
 
-.skills-section .section-content {
-    max-width: 90%;
-    margin: 0 auto;
-
-
-}
 
 /* Media Queries */
 @media (max-width: 768px) {

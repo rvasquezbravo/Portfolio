@@ -102,6 +102,12 @@ footer p {
     margin: 0;
 }
 
+.skills-section {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Skills section */
+    background-size: cover;
+    background-position: center;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header-content {

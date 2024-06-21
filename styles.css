@@ -47,6 +47,7 @@ nav ul li a:hover {
 .section {
     padding: 60px 20px;
     color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .section .container {

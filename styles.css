@@ -49,10 +49,21 @@ nav ul {
     margin: 20px 0 0; /* Adjusted margin for spacing */
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul li {
-    margin: 0 10px; /* Adjusted margin for spacing */
+    margin: 10px; /* Adjusted margin for spacing */
+    width: 150px; /* Set a fixed width for list items */
+    height: 50px; /* Set a fixed height for list items */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    transition: transform 0.3s; /* Add transition for hover effect */
 }
 
 nav ul li a {
@@ -61,12 +72,35 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.2em; /* Adjusted font size */
     text-transform: uppercase;
-    transition: color 0.3s;
     font-family: 'Indie Flower', cursive; /* Apply the fun font */
 }
 
-nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+nav ul li.about {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for About */
+}
+
+nav ul li.skills {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Skills */
+}
+
+nav ul li.certifications {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Certifications */
+}
+
+nav ul li.companies {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Companies */
+}
+
+nav ul li.projects {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Projects */
+}
+
+nav ul li.contact {
+    background-image: url('cybersecurity-background.jpg'); /* Path to your background image for Contact */
+}
+
+nav ul li:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 main {
@@ -109,29 +143,4 @@ footer p {
     }
 
     .profile-pic {
-        width: 150px; /* Adjusted size for smaller screens */
-        height: 150px; /* Adjusted size for smaller screens */
-        margin: 10px auto; /* Reduce margin for smaller screens */
-    }
-
-    header h1 {
-        font-size: 2.5em; /* Adjust font size for smaller screens */
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        margin-top: 10px; /* Adjusted margin for spacing */
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    }
-
-    nav ul li {
-        margin: 5px; /* Adjusted margin for spacing */
-        width: 100%; /* Full width for buttons */
-        text-align: center; /* Center align text */
-    }
-
-    /* Ensure footer stays at bottom */
-    main {
-        min-height: calc(100vh - 380px); /* Adjust as needed */
-    }
-}
+        width: 150px; /* Adjusted size

@@ -2,43 +2,82 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: url('cybersecurity.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
+    padding: 100px 0;
 }
 
-header h1 {
-    margin: 0;
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background: #333;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
+    margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
-section {
-    padding: 1rem 0;
-    margin: 0;
-    background-color: #222;
+nav ul li a:hover {
+    background: #575757;
 }
 
-h2 {
-    color: #333;
+.section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+#skills {
+    background: #2c3e50;
+}
+
+#certifications {
+    background: #34495e;
+}
+
+#locations {
+    background: #16a085;
+}
+
+#projects {
+    background: #27ae60;
+}
+
+#social {
+    background: #2980b9;
+}
+
+#contact {
+    background: #8e44ad;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 ul {
@@ -47,49 +86,40 @@ ul {
 }
 
 ul li {
-    margin: 5px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.project {
-    margin: 1rem 0;
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-#contact-form {
+form {
     display: flex;
     flex-direction: column;
 }
 
-#contact-form label {
-    margin: 5px 0;
+form label {
+    margin-bottom: 5px;
 }
 
-#contact-form input, #contact-form textarea {
+form input, form textarea {
+    margin-bottom: 15px;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-#contact-form button {
+form button {
     padding: 10px;
-    margin: 10px 0;
     border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
+    background: #333;
+    color: white;
     cursor: pointer;
 }
 
-#contact-form button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+form button:hover {
+    background: #575757;
 }

@@ -3,85 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Expert Portfolio</title>
+    <title>Cybersecurity Expert</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Jane Doe - Cybersecurity Expert</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#locations">Countries & Languages</a></li>
-                <li><a href="#companies">Companies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Jane Doe</h1>
+            <p>Cybersecurity Expert</p>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jane Doe, a cybersecurity expert with over 10 years of experience in protecting data and systems. I specialize in network security, ethical hacking, and risk assessment.</p>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#locations">Countries & Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social Networks</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section id="skills">
+    <main>
+        <section id="skills" class="section">
             <h2>Skills</h2>
             <ul>
                 <li>Network Security</li>
-                <li>Ethical Hacking</li>
-                <li>Risk Assessment</li>
                 <li>Penetration Testing</li>
-                <li>Security Audits</li>
+                <li>Incident Response</li>
+                <li>Cryptography</li>
             </ul>
         </section>
 
-        <section id="certifications">
+        <section id="certifications" class="section">
             <h2>Certifications</h2>
             <ul>
-                <li>Certified Information Systems Security Professional (CISSP)</li>
-                <li>Certified Ethical Hacker (CEH)</li>
+                <li>CISSP</li>
+                <li>CEH</li>
+                <li>CISM</li>
                 <li>CompTIA Security+</li>
-                <li>Certified Information Security Manager (CISM)</li>
             </ul>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project A</h3>
-                <p>Developed a comprehensive security protocol for a multinational company, reducing data breaches by 40%.</p>
-            </div>
-            <div class="project">
-                <h3>Project B</h3>
-                <p>Led a team of ethical hackers in a successful penetration testing exercise for a financial institution.</p>
-            </div>
-        </section>
-
-        <section id="locations">
+        <section id="locations" class="section">
             <h2>Countries & Languages</h2>
             <ul>
                 <li>USA - English</li>
                 <li>Germany - German</li>
                 <li>France - French</li>
+                <li>Spain - Spanish</li>
             </ul>
         </section>
 
-        <section id="companies">
-            <h2>Companies</h2>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
             <ul>
-                <li>Company A</li>
-                <li>Company B</li>
-                <li>Company C</li>
+                <li>Project A: Network Intrusion Detection System</li>
+                <li>Project B: Secure Online Transaction System</li>
+                <li>Project C: Mobile Security App</li>
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="social" class="section">
+            <h2>Social Networks</h2>
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <form id="contact-form">
+            <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -91,15 +87,13 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+        <p>&copy; 2024 Jane Doe. All Rights Reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>

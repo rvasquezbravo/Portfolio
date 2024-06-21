@@ -44,9 +44,9 @@ nav ul li a:hover {
     background: #575757;
 }
 
-.section {
+.section .container {
     padding: 60px 20px;
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
     color: white;
 }

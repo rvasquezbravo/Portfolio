@@ -1,4 +1,4 @@
-/* General styles (unchanged) */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,15 +7,16 @@ body {
 }
 
 header {
-    background: url('philadelphia2.png') no-repeat center center/cover;
+    background: linear-gradient(to right, #3b5998, #8b9dc3);
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 60px 20px; /* Adjusted padding */
     border-bottom: 10px solid white;
-    height: 60vh; /* Example height, adjust as needed */
+    height: auto; /* Adjust height */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Stack content vertically */
 }
 
 header .container {
@@ -27,20 +28,29 @@ header .container {
     position: relative;
 }
 
-header img {
-    width: 250px; /* Increased size of profile picture */
-    height: 250px; /* Increased size of profile picture */
-    border-radius: 50%;
-    border: 5px solid #fff;
-    object-fit: cover;
-    margin-top: 20px;
+header .header-image {
+    margin-bottom: 20px; /* Space between image and text */
+    position: relative;
+    overflow: hidden;
+    border: 8px solid #8b9dc3; /* Same border color as other sections */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Strong shadow */
+}
+
+header .header-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+header .header-image img:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 header h1 {
     font-size: 3.5rem; /* Larger font size */
-    margin-bottom: 10px;
     margin-bottom: 5px; /* Reduced space between h1 and p */
-    color: white
+    color: white;
     font-family: 'Lobster', cursive; /* Apply Lobster font */
 }
 
@@ -48,9 +58,8 @@ header p {
     font-size: 2.5rem; /* Larger font size */
     margin-bottom: 20px;
     margin-top: 5px; /* Reduced space between h1 and p */
-    color: white
+    color: white;
     font-weight: bold; /* Make the font bold */
-    
 }
 
 nav {

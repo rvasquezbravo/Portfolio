@@ -85,3 +85,73 @@ nav ul li a:hover {
 .skills-list ul li {
     margin-bottom: 10px;
 }
+
+#skills {
+    background: #3b5998;
+}
+
+#certifications {
+    background: #8b9dc3;
+}
+
+#locations {
+    background: #dfe3ee;
+    color: #333;
+}
+
+#projects {
+    background: #3b5998;
+}
+
+#social {
+    background: #8b9dc3;
+}
+
+#contact {
+    background: #dfe3ee;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #575757;
+}

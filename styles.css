@@ -141,8 +141,8 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 100px; /* Default icon width */
-    height: 100px; /* Default icon height */
+    width: 120px; /* Increased default icon width */
+    height: 120px; /* Increased default icon height */
     overflow: hidden; /* Ensure the image does not exceed its container */
     background-color: #8b9dc3; /* Background color matching section */
     display: flex;
@@ -152,8 +152,8 @@ nav ul li a:hover {
 }
 
 .linkedin-icon {
-    width: 70px; /* Adjusted size for LinkedIn icon */
-    height: 70px; /* Adjusted size for LinkedIn icon */
+    width: 100px; /* Increased size for LinkedIn icon */
+    height: 100px; /* Increased size for LinkedIn icon */
 }
 
 .social-icon img {
@@ -171,8 +171,6 @@ nav ul li a:hover {
     margin-bottom: 20px; /* Space below the title */
     text-align: center; /* Center text */
 }
-
-
 
 
 #skills {

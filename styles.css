@@ -59,6 +59,7 @@ nav ul li a:hover {
 
 .skills-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -67,14 +68,12 @@ nav ul li a:hover {
 }
 
 .skills-list {
-    flex: 3;
-    display: flex;
-    align-items: center;
+    flex: 2;
 }
 
 .skills-icon {
     width: 100px; /* Adjust size as needed */
-    margin-right: 20px; /* Space between icon and text */
+    margin-left: 20px; /* Space between list and icon */
 }
 
 .skills-list ul {

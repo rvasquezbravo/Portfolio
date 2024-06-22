@@ -88,6 +88,19 @@ nav ul li a:hover {
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    position: relative; /* Ensure z-index works */
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px; /* Adjust as needed */
+    width: calc(100% + 40px); /* Adjust width to cover the title */
+    height: calc(100% + 20px); /* Adjust height to cover the title */
+    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    z-index: -1; /* Behind the title */
 }
 
 .section-list {

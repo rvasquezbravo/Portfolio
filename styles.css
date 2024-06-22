@@ -80,9 +80,6 @@ nav ul li a:hover {
     overflow: hidden;
     border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .section-image img {
@@ -94,14 +91,6 @@ nav ul li a:hover {
 
 .section-image img:hover {
     transform: scale(1.05); /* Scale up on hover */
-}
-
-.section-text {
-    text-align: center; /* Center text */
-}
-
-.section-text p {
-    font-size: 1.2em; /* Adjust text size */
 }
 
 #skills {

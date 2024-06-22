@@ -144,8 +144,11 @@ nav ul li a:hover {
     width: 100px; /* Default icon width */
     height: 100px; /* Default icon height */
     overflow: hidden; /* Ensure the image does not exceed its container */
-    border-radius: 50%; /* Rounded shape for circle */
     background-color: #8b9dc3; /* Background color matching section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners for rectangle */
 }
 
 .linkedin-icon {
@@ -168,6 +171,7 @@ nav ul li a:hover {
     margin-bottom: 20px; /* Space below the title */
     text-align: center; /* Center text */
 }
+
 
 
 

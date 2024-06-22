@@ -25,6 +25,15 @@ header .container {
     box-sizing: border-box;
 }
 
+header img {
+    width: 250px; /* Increased size of profile picture */
+    height: 250px; /* Increased size of profile picture */
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
 nav {
     background: #333;
     border-bottom: 10px solid white;

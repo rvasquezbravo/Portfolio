@@ -10,13 +10,13 @@ header {
     background: linear-gradient(to right, #3b5998, #8b9dc3);
     color: white;
     text-align: center;
-    padding: 60px 20px; /* Adjusted padding */
+    padding: 60px 20px;
     border-bottom: 10px solid white;
-    height: auto; /* Adjust height */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
 }
 
 header .container {
@@ -28,38 +28,49 @@ header .container {
     position: relative;
 }
 
+header .header-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header .header-image {
-    margin-bottom: 20px; /* Space between image and text */
+    width: 250px; /* Fixed width for desktop */
+    height: 250px; /* Fixed height for desktop */
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    border: 8px solid #8b9dc3; /* Same border color as other sections */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Strong shadow */
+    border: 8px solid #8b9dc3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 header .header-image img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
 }
 
 header .header-image img:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05);
 }
 
 header h1 {
-    font-size: 3.5rem; /* Larger font size */
-    margin-bottom: 5px; /* Reduced space between h1 and p */
+    font-size: 3.5rem;
+    margin-bottom: 5px;
     color: white;
-    font-family: 'Lobster', cursive; /* Apply Lobster font */
+    font-family: 'Lobster', cursive;
 }
 
 header p {
-    font-size: 2.5rem; /* Larger font size */
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    margin-top: 5px; /* Reduced space between h1 and p */
+    margin-top: 5px;
     color: white;
-    font-weight: bold; /* Make the font bold */
+    font-weight: bold;
 }
 
 nav {
@@ -94,7 +105,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     color: white;
     border-bottom: 10px solid white;
-    text-align: center; /* Center text content */
+    text-align: center;
 }
 
 .section .container {
@@ -103,11 +114,11 @@ nav ul li a:hover {
 }
 
 .section-content {
-    display: flex; /* Flex layout */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 .section-title {
@@ -116,33 +127,35 @@ nav ul li a:hover {
 }
 
 .section-text {
-    margin-bottom: 20px; /* Space below the section title */
-    text-align: left; /* Align text content to the left */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .section-list {
     list-style-type: disc;
-    margin-left: 20px; /* Adjusted left margin for bullet points */
+    margin-left: 20px;
     padding: 0;
 }
 
 .section-image {
-    margin-bottom: 20px; /* Space between image and text */
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border: 8px solid #8b9dc3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .section-image img {
-    max-width: 100%; /* Ensure image fits container */
+    width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
 
 .section-image img:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05);
 }
 
 #skills {
@@ -204,7 +217,7 @@ form button:hover {
 }
 
 footer {
-    background: #333; /* Same as nav background color */
+    background: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -217,24 +230,31 @@ footer p {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     nav {
-        display: none; /* Hide the nav on mobile */
+        display: none;
     }
 
     .section-content {
-        text-align: center; /* Center text */
+        text-align: center;
     }
 
     .section-image {
-        order: -1; /* Move image above text on mobile */
+        order: -1;
     }
 
     .section-text {
-        text-align: center; /* Center text content on mobile */
+        text-align: center;
     }
 
     .section-list {
-        text-align: left; /* Align bullet points to the left */
-        margin-left: 0; /* Remove left margin for bullet points */
-        padding-inline-start: 20px; /* Add padding for bullet points */
+        text-align: left;
+        margin-left: 0;
+        padding-inline-start: 20px;
+    }
+
+    header .header-image {
+        width: 100%;
+        height: auto;
+        max-width: 300px; /* Maximum width for mobile */
+        margin-bottom: 20px;
     }
 }

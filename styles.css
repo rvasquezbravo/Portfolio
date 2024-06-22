@@ -59,19 +59,19 @@ nav ul li a:hover {
 
 .section-content {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .section-title {
-    text-align: left; /* Align title to the left */
-    font-size: 2.5rem; /* Increase font size */
-    margin-bottom: 10px; /* Space between title and list */
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .section-list {
-    list-style-type: disc; /* Use bullets for the list */
-    margin-left: 20px; /* Space between bullets and text */
+    list-style-type: disc;
+    margin-left: 20px;
     padding: 0;
 }
 
@@ -99,12 +99,12 @@ nav ul li a:hover {
 #contact {
     background: #dfe3ee;
     color: #333;
-    padding: 60px 20px; /* Adjust padding for contact form */
+    padding: 60px 20px;
 }
 
 form {
-    max-width: 600px; /* Set max-width for the form */
-    margin: 0 auto; /* Center align the form */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
@@ -138,4 +138,53 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section-content {
+        align-items: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    form {
+        padding: 0 10px;
+    }
+
+    form button {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
 }

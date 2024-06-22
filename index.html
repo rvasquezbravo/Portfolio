@@ -1,186 +1,175 @@
-/* General styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jane Doe</h1>
+            <p>Cybersecurity Expert</p>
+        </div>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#locations">Countries & Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social Networks</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
+    <main>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2 class="section-title">Skills</h2>
+                        <ul class="section-list">
+                            <li>Network Security</li>
+                            <li>Penetration Testing</li>
+                            <li>Incident Response</li>
+                            <li>Security Auditing</li>
+                            <li>Encryption Techniques</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Firewall Configuration</li>
+                        </ul>
+                    </div>
+                    <div class="section-image">
+                        <img src="skills-image.jpg" alt="Skills Image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Header styles */
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2 class="section-title">Certifications</h2>
+                        <ul class="section-list">
+                            <li>Certification 1</li>
+                            <li>Certification 2</li>
+                            <li>Certification 3</li>
+                            <li>Certification 4</li>
+                            <li>Certification 5</li>
+                            <li>Certification 6</li>
+                            <li>Certification 7</li>
+                        </ul>
+                    </div>
+                    <div class="section-image">
+                        <img src="certifications-image.jpg" alt="Certifications Image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-header {
-    background: url('cybersecurity.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-    border-bottom: 10px solid white;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        <section id="locations" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2 class="section-title">Countries & Languages</h2>
+                        <ul class="section-list">
+                            <li>Country/Language 1</li>
+                            <li>Country/Language 2</li>
+                            <li>Country/Language 3</li>
+                            <li>Country/Language 4</li>
+                            <li>Country/Language 5</li>
+                            <li>Country/Language 6</li>
+                            <li>Country/Language 7</li>
+                        </ul>
+                    </div>
+                    <div class="section-image">
+                        <img src="locations-image.jpg" alt="Countries and Languages Image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Navigation styles */
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2 class="section-title">Projects</h2>
+                        <ul class="section-list">
+                            <li>Project 1</li>
+                            <li>Project 2</li>
+                            <li>Project 3</li>
+                            <li>Project 4</li>
+                            <li>Project 5</li>
+                            <li>Project 6</li>
+                            <li>Project 7</li>
+                        </ul>
+                    </div>
+                    <div class="section-image">
+                        <img src="projects-image.jpg" alt="Projects Image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-nav {
-    background: #333;
-    border-bottom: 10px solid white;
-}
+        <section id="social" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2 class="section-title">Social Networks</h2>
+                        <ul class="section-list">
+                            <li>Social Network 1</li>
+                            <li>Social Network 2</li>
+                            <li>Social Network 3</li>
+                            <li>Social Network 4</li>
+                            <li>Social Network 5</li>
+                            <li>Social Network 6</li>
+                            <li>Social Network 7</li>
+                        </ul>
+                    </div>
+                    <div class="section-image">
+                        <img src="social-networks-image.jpg" alt="Social Networks Image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-nav ul li {
-    margin: 0 15px;
-}
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-nav ul li a:hover {
-    background: #575757;
-}
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-/* Section styles */
-
-.section {
-    padding: 60px 20px;
-    color: white;
-    border-bottom: 10px solid white;
-}
-
-.section-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section-list {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding: 0;
-}
-
-.section-list li {
-    margin-bottom: 10px;
-}
-
-.section-image {
-    position: relative;
-    overflow: hidden;
-    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-    text-align: center; /* Center align image */
-}
-
-.section-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-    width: 100%; /* Ensure images take full width of container */
-}
-
-.section-image img:hover {
-    transform: scale(1.05); /* Scale up on hover */
-}
-
-/* Section-specific background colors */
-
-#skills {
-    background: #3b5998;
-}
-
-#certifications {
-    background: #8b9dc3;
-}
-
-#locations {
-    background: #dfe3ee;
-    color: #333;
-}
-
-#projects {
-    background: #3b5998;
-}
-
-#social {
-    background: #8b9dc3;
-}
-
-#contact {
-    background: #dfe3ee;
-    color: #333;
-    padding: 60px 20px;
-}
-
-/* Form styles */
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    margin-bottom: 5px;
-    display: block;
-}
-
-form input, form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-}
-
-form button {
-    padding: 15px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #575757;
-}
-
-/* Media Queries for Responsive Design */
-
-@media (max-width: 768px) {
-    .section-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .section-image {
-        margin-bottom: 20px;
-    }
-}
+    <footer>
+        <div class="container">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#locations">Countries & Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#social">Social Networks</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Jane Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -64,12 +64,12 @@ nav ul li a:hover {
 }
 
 .skills-title {
-    text-align: left;
+    text-align: center;
+    margin-bottom: 10px; /* Space between title and image */
 }
 
 .skills-icon-container {
     text-align: right; /* Align image to the right */
-    margin-left: 20px; /* Space between title and icon */
 }
 
 .skills-icon {

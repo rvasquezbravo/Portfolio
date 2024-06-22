@@ -11,16 +11,26 @@ header {
     text-align: center;
     padding: 100px 0;
     border-bottom: 10px solid white;
+    height: 100vh; /* Set header height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .container {
     max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 nav {
     background: #333;
     border-bottom: 10px solid white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999; /* Ensure nav is above header content */
 }
 
 nav ul {

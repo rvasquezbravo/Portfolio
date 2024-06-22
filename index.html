@@ -1,147 +1,94 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jane Doe</h1>
+            <p>Cybersecurity Expert</p>
+        </div>
+    </header>
 
-header {
-    background: url('cybersecurity.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-    border-bottom: 10px solid white;
-}
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#locations">Countries & Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social Networks</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <main>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="skills-content">
+                    <div class="skills-icon-container">
+                        <h2 class="skills-title">Skills</h2>
+                        <img src="skills-icon.png" alt="Skills Icon" class="skills-icon">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-nav {
-    background: #333;
-    border-bottom: 10px solid white;
-}
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications</h2>
+                <p>List of certifications goes here...</p>
+            </div>
+        </section>
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
+        <section id="locations" class="section">
+            <div class="container">
+                <h2>Countries & Languages</h2>
+                <p>List of countries and languages goes here...</p>
+            </div>
+        </section>
 
-nav ul li {
-    margin: 0 15px;
-}
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>List of projects goes here...</p>
+            </div>
+        </section>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
+        <section id="social" class="section">
+            <div class="container">
+                <h2>Social Networks</h2>
+                <p>Social networks links go here...</p>
+            </div>
+        </section>
 
-nav ul li a:hover {
-    background: #575757;
-}
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-.section {
-    padding: 60px 20px;
-    color: white;
-    border-bottom: 10px solid white;
-}
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-.section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-.skills-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-.skills-title {
-    text-align: center;
-    margin-bottom: 10px; /* Space between title and image */
-}
-
-.skills-icon-container {
-    text-align: right; /* Align image to the right */
-}
-
-.skills-icon {
-    width: 250px; /* Set image width */
-}
-
-#skills {
-    background: #3b5998;
-}
-
-#certifications {
-    background: #8b9dc3;
-}
-
-#locations {
-    background: #dfe3ee;
-    color: #333;
-}
-
-#projects {
-    background: #3b5998;
-}
-
-#social {
-    background: #8b9dc3;
-}
-
-#contact {
-    background: #dfe3ee;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    background: #333;
-    color: white;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #575757;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jane Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

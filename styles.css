@@ -127,77 +127,39 @@ form input, form textarea {
 }
 
 form button {
-    padding: 10px;
-    border: none;
-    background: #333;
+    padding: 15px 20px;
+    background-color: #333;
     color: white;
+    border: none;
     cursor: pointer;
-    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background: #575757;
+    background-color: #575757;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .mobile-nav ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer .mobile-nav ul li {
-    margin: 10px 0;
-}
-
-footer .mobile-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-footer .mobile-nav ul li a:hover {
-    background: #575757;
-}
-
-footer p {
-    margin: 20px 0 0;
-}
-
-/* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    footer .mobile-nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
     .section-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
-    .section-title {
-        text-align: left;
-        font-size: 2rem;
+    .section-text {
+        order: 1;
     }
 
     .section-image {
-        order: -1;
-        margin-bottom: 20px;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-list {
+        margin-left: 0;
     }
 
     form {

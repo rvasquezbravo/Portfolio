@@ -133,29 +133,32 @@ nav ul li a:hover {
     transform: scale(1.05); /* Scale up on hover */
 }
 
-/* Add styles for social icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Add styles for social icons grid */
+.social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Gap between icons */
 }
 
 .social-icon {
-    display: inline-block;
-    width: 50px; /* Adjust icon size */
-    height: 50px; /* Adjust icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure icons take full width of their grid cell */
+    height: 100%; /* Ensure icons take full height of their grid cell */
     overflow: hidden; /* Ensure the image does not exceed its container */
     border-radius: 8px; /* Rounded corners for square shape */
+    border: 2px solid #ccc; /* Optional: Add border for visual separation */
 }
 
 .social-icon img {
-    width: 100%; /* Ensure the icon fills its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
+    max-width: 100%; /* Ensure the icon fits its container */
+    max-height: 100%; /* Ensure the icon fits its container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
     transition: transform 0.3s ease;
 }
 
-.social-icon img:hover {
+.social-icon:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
 

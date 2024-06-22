@@ -148,15 +148,20 @@ nav ul li a:hover {
     background-color: #8b9dc3; /* Background color matching section */
 }
 
+.linkedin-icon {
+    width: 70px; /* Adjusted size for LinkedIn icon */
+    height: 70px; /* Adjusted size for LinkedIn icon */
+}
+
+.github-icon {
+    /* Optional: You can add specific styles for the GitHub icon if needed */
+}
+
 .social-icon img {
     width: 100%; /* Ensure the icon fills its container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Maintain aspect ratio and cover container */
     transition: transform 0.3s ease;
-}
-
-.social-icon:nth-child(1) img {
-    width: 70%; /* Adjusted size for LinkedIn icon */
 }
 
 .social-icon:hover {

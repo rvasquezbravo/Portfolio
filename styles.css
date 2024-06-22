@@ -65,11 +65,11 @@ nav ul li a:hover {
 }
 
 .section-content {
-    display: flex; /* Change to flex layout */
-    flex-direction: column; /* Stack content vertically on mobile */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
     gap: 20px;
-    align-items: center;
-    text-align: center; /* Center text content */
+    text-align: center; /* Center text */
 }
 
 .section-title {
@@ -84,17 +84,15 @@ nav ul li a:hover {
 }
 
 .section-image {
-    position: relative;
-    overflow: hidden;
-    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-    max-width: 100%; /* Ensure image doesn't exceed container width */
+    margin-bottom: 20px; /* Space between image and text */
 }
 
 .section-image img {
-    max-width: 100%;
+    max-width: 100%; /* Ensure image fits container */
     height: auto;
     display: block;
+    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
     transition: transform 0.3s ease;
 }
 
@@ -178,8 +176,7 @@ footer p {
     }
 
     .section-content {
-        flex-direction: column; /* Stack content vertically on mobile */
-        text-align: left; /* Align text to the left on mobile */
+        text-align: center; /* Center text */
     }
 
     .section-image {

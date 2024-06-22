@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url('cybersecurity.jpg') no-repeat center center/cover;
+    background: linear-gradient(to right, #3b5998, #8b9dc3);
     color: white;
     text-align: center;
     padding: 100px 0;

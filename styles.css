@@ -20,7 +20,7 @@ header .container {
 
 nav {
     background: #333;
-    border-bottom: 10px solid white; /* Added border-bottom here */
+    border-bottom: 10px solid white;
 }
 
 nav ul {
@@ -57,77 +57,31 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#skills {
-    background: #3b5998;
-}
-
-#certifications {
-    background: #8b9dc3;
-}
-
-#locations {
-    background: #dfe3ee;
-    color: #333;
-}
-
-#projects {
-    background: #3b5998;
-}
-
-#social {
-    background: #8b9dc3;
-}
-
-#contact {
-    background: #dfe3ee;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-form {
+.skills-content {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-form label {
-    margin-bottom: 5px;
+.skills-title {
+    flex: 1;
 }
 
-form input, form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
+.skills-list {
+    flex: 3;
+    display: flex;
+    align-items: center;
 }
 
-form button {
-    padding: 10px;
-    border: none;
-    background: #333;
-    color: white;
-    cursor: pointer;
+.skills-icon {
+    width: 100px; /* Adjust size as needed */
+    margin-right: 20px; /* Space between icon and text */
 }
 
-form button:hover {
-    background: #575757;
+.skills-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills-list ul li {
+    margin-bottom: 10px;
 }

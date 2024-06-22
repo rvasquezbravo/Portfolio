@@ -7,6 +7,7 @@ body {
 
 header {
     background: url('cybersecurity.jpg') no-repeat center center/cover;
+    background-size: 70%; /* Reduce the size of the background image by 30% */
     color: white;
     text-align: center;
     padding: 100px 0;

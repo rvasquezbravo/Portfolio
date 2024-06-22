@@ -49,6 +49,7 @@ header p {
     margin-bottom: 20px;
     margin-top: 5px; /* Reduced space between h1 and p */
     color: #333; /* Darker and elegant color */
+    font-weight: bold; /* Make the font bold */
     
 }
 

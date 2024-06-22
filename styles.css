@@ -42,8 +42,9 @@ header h1 {
 }
 
 header p {
-    font-size: 1.5rem; /* Larger font size */
+    font-size: 2.5rem; /* Larger font size */
     margin-bottom: 20px;
+    color: #333; /* Darker and elegant color */
 }
 
 nav {

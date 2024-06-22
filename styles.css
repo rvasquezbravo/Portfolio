@@ -59,26 +59,31 @@ nav ul li a:hover {
 
 .skills-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.skills-list {
+    flex: 1;
 }
 
 .skills-title {
     flex: 1;
+    text-align: right;
 }
 
-.skills-list {
-    flex: 2;
+.skills-icon-container {
+    flex: 1;
+    text-align: left;
 }
 
 .skills-icon {
-    width: 100px; /* Adjust size as needed */
-    margin-left: 20px; /* Space between list and icon */
+    width: 150px; /* Adjust size as needed */
+    margin-right: 20px; /* Space between icon and list */
 }
 
 .skills-list ul {
     padding: 0;
-    list-style-type: none;
+    list-style-type: disc;
 }
 
 .skills-list ul li {

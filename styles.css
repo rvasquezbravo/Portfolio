@@ -156,3 +156,14 @@ form button {
 form button:hover {
     background-color: #575757;
 }
+
+footer {
+    background: #333; /* Same as nav background color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

@@ -7,12 +7,11 @@ body {
 
 header {
     background: url('cybersecurity.jpg') no-repeat center center/cover;
-    background-size: 70%; /* Reduce the size of the background image by 30% */
     color: white;
     text-align: center;
     padding: 100px 0;
     border-bottom: 10px solid white;
-    height: 100vh; /* Set header height to full viewport height */
+    height: 60vh; /* Example height, adjust as needed */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,10 +27,6 @@ header .container {
 nav {
     background: #333;
     border-bottom: 10px solid white;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 999; /* Ensure nav is above header content */
 }
 
 nav ul {

@@ -20,7 +20,7 @@ header .container {
 
 nav {
     background: #333;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid white; /* Added border-bottom here */
 }
 
 nav ul {
@@ -57,6 +57,11 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 #skills {
     background: #3b5998;
 }
@@ -81,12 +86,6 @@ nav ul li a:hover {
 #contact {
     background: #dfe3ee;
     color: #333;
-}
-
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    
 }
 
 ul {

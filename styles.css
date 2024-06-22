@@ -141,8 +141,8 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 100px; /* Adjust icon width */
-    height: 100px; /* Adjust icon height */
+    width: 100px; /* Default icon width */
+    height: 100px; /* Default icon height */
     overflow: hidden; /* Ensure the image does not exceed its container */
     border-radius: 50%; /* Rounded shape for circle */
     background-color: #8b9dc3; /* Background color matching section */
@@ -155,6 +155,10 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
+.social-icon:nth-child(1) img {
+    width: 70%; /* Adjusted size for LinkedIn icon */
+}
+
 .social-icon:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
@@ -163,7 +167,6 @@ nav ul li a:hover {
     margin-bottom: 20px; /* Space below the title */
     text-align: center; /* Center text */
 }
-
 
 
 #skills {

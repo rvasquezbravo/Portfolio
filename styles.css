@@ -59,8 +59,8 @@ nav ul li a:hover {
 
 .skills-content {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
-    align-items: center; /* Align items in the center */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
 }
 
 .skills-title {
@@ -69,20 +69,21 @@ nav ul li a:hover {
     margin-bottom: 10px; /* Space between title and list */
 }
 
+.skills-details {
+    display: flex; /* Align items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center content horizontally */
+}
+
 .skills-list {
     list-style-type: disc; /* Use bullets for the list */
     margin-left: 20px; /* Space between bullets and text */
     padding: 0;
 }
 
-.skills-icon-container {
-    margin-left: auto; /* Push the image to the right */
-}
-
 .skills-icon {
     width: 250px; /* Set image width */
-    display: block; /* Ensure image is block-level */
-    margin-top: 20px; /* Space between list and image */
+    margin-right: 20px; /* Space between image and list */
 }
 
 #skills {

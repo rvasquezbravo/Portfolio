@@ -81,6 +81,7 @@ nav ul li a:hover {
     list-style-type: disc;
     margin-left: 20px;
     padding: 0;
+    list-style-position: inside; /* Position bullet points inside the list item */
 }
 
 .section-image {

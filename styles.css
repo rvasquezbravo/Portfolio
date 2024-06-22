@@ -144,6 +144,8 @@ nav ul li a:hover {
     display: inline-block;
     width: 50px; /* Adjust icon size */
     height: 50px; /* Adjust icon size */
+    overflow: hidden; /* Ensure the image does not exceed its container */
+    border-radius: 8px; /* Rounded corners for square shape */
 }
 
 .social-icon img {

@@ -99,16 +99,38 @@ nav ul li a:hover {
 #contact {
     background: #dfe3ee;
     color: #333;
+    padding: 60px 20px; /* Adjust padding for contact form */
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+form {
+    max-width: 600px; /* Set max-width for the form */
+    margin: 0 auto; /* Center align the form */
 }
 
-ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+form label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background: #575757;
 }
 
 footer {

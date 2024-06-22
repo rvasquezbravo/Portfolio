@@ -135,26 +135,22 @@ nav ul li a:hover {
 
 /* Add styles for social icons grid */
 .social-icons-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
     gap: 20px; /* Gap between icons */
 }
 
 .social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; /* Reduced icon size */
-    height: 50%; /* Reduced icon size */
+    width: 100px; /* Adjust icon width */
+    height: 100px; /* Adjust icon height */
     overflow: hidden; /* Ensure the image does not exceed its container */
-    border-radius: 8px; /* Rounded corners for square shape */
-    border: 2px solid #333; /* Frame color matching site */
+    border-radius: 50%; /* Rounded shape for circle */
     background-color: #8b9dc3; /* Background color matching section */
 }
 
 .social-icon img {
-    max-width: 100%; /* Ensure the icon fits its container */
-    max-height: 100%; /* Ensure the icon fits its container */
+    width: 100%; /* Ensure the icon fills its container */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Maintain aspect ratio and cover container */
     transition: transform 0.3s ease;
 }
@@ -165,7 +161,9 @@ nav ul li a:hover {
 
 .section-title {
     margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center text */
 }
+
 
 
 #skills {

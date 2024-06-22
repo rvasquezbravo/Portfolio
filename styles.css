@@ -76,17 +76,17 @@ nav ul li a:hover {
 }
 
 .section-image {
-    position: relative; /* Ensure container for image */
-    overflow: hidden; /* Hide overflow for border */
+    position: relative;
+    overflow: hidden;
+    border: 8px solid #4CAF50; /* Green border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 .section-image img {
     max-width: 100%;
     height: auto;
     display: block;
-    border: 5px solid #fff; /* White border */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease;
 }
 
 .section-image img:hover {

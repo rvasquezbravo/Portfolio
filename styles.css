@@ -152,7 +152,7 @@ nav ul li a:hover {
 }
 
 .linkedin-icon {
-    width: 20%; /* 60% of the .social-icon width */
+    width: 10%; /* 60% of the .social-icon width */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -248,7 +248,7 @@ footer p {
         grid-template-columns: 1fr; /* Single column layout on mobile */
     }
     .social-icon {
-        width: 20%; /* Full width for single column on mobile */
+        width: 40%; /* Full width for single column on mobile */
     }
     nav {
         display: none; /* Hide the nav on mobile */

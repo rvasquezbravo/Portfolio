@@ -152,7 +152,7 @@ nav ul li a:hover {
 }
 
 .linkedin-icon {
-    width: 60%; /* 60% of the .social-icon width */
+    width: 20%; /* 60% of the .social-icon width */
     height: auto; /* Maintain aspect ratio */
 }
 

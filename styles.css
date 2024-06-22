@@ -7,6 +7,7 @@ body {
 
 header {
     background: url('cybersecurity.jpg') no-repeat center center/cover;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -15,6 +16,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Add position relative for absolute positioning of pseudo-element */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 header .container {
@@ -22,6 +35,8 @@ header .container {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure content is above pseudo-element */
 }
 
 nav {

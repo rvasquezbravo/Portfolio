@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #3b5998, #8b9dc3);
+    background: url('philadelphia.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 0;

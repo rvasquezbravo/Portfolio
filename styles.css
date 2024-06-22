@@ -80,11 +80,12 @@ nav ul li a:hover {
 
 .section-text {
     margin-bottom: 20px; /* Space below the section title */
+    text-align: left; /* Align text content to the left */
 }
 
 .section-list {
     list-style-type: disc;
-    margin-left: 0; /* Remove default margin */
+    margin-left: 20px; /* Adjusted left margin for bullet points */
     padding: 0;
     list-style-position: inside; /* Position bullet points inside the list item */
 }
@@ -191,3 +192,4 @@ footer p {
         order: -1; /* Move image above text on mobile */
     }
 }
+

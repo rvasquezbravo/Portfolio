@@ -78,7 +78,7 @@ nav ul li a:hover {
 .section-image {
     position: relative;
     overflow: hidden;
-    border: 8px solid #4CAF50; /* Green border */
+    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 

@@ -85,6 +85,7 @@ nav ul li a:hover {
 .section h2 {
     text-align: center;
     margin-bottom: 30px;
+    border-bottom: 10px solid white;
 }
 
 ul {

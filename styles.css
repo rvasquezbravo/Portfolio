@@ -59,17 +59,18 @@ nav ul li a:hover {
 
 .skills-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align content to the top */
 }
 
 .skills-title {
-    text-align: center;
+    text-align: left; /* Align title to the left */
     margin-bottom: 10px; /* Space between title and image */
 }
 
 .skills-icon-container {
-    text-align: right; /* Align image to the right */
+    text-align: left; /* Align image to the left */
+    margin-left: 20px; /* Space between title and image */
 }
 
 .skills-icon {

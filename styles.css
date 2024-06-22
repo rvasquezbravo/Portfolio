@@ -148,7 +148,8 @@ nav ul li a:hover {
     height: 100%; /* Ensure icons take full height of their grid cell */
     overflow: hidden; /* Ensure the image does not exceed its container */
     border-radius: 8px; /* Rounded corners for square shape */
-    border: 2px solid #ccc; /* Optional: Add border for visual separation */
+    border: 2px solid #333; /* Frame color matching site */
+    background-color: #3b5998; /* Background color matching site */
 }
 
 .social-icon img {
@@ -234,6 +235,9 @@ footer p {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
+    .social-icons-grid {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
     nav {
         display: none; /* Hide the nav on mobile */
     }

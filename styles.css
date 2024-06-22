@@ -9,9 +9,9 @@ header {
     background: url('cybersecurity.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 60px 0;
     border-bottom: 10px solid white;
-    height: 60vh; /* Example height, adjust as needed */
+    height: 40vh; /* Adjusted for better mobile view */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     display: block;
 }
 
@@ -53,7 +53,7 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 40px 20px; /* Adjusted for better mobile view */
     color: white;
     border-bottom: 10px solid white;
 }
@@ -65,14 +65,15 @@ nav ul li a:hover {
 
 .section-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     align-items: center;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted for better mobile view */
     margin-bottom: 10px;
+    text-align: center; /* Centered for better mobile view */
 }
 
 .section-list {
@@ -86,6 +87,8 @@ nav ul li a:hover {
     overflow: hidden;
     border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    margin: 0 auto; /* Centered for better mobile view */
+    max-width: 100%; /* Ensures image does not overflow container */
 }
 
 .section-image img {
@@ -123,7 +126,7 @@ nav ul li a:hover {
 #contact {
     background: #dfe3ee;
     color: #333;
-    padding: 60px 20px;
+    padding: 40px 20px; /* Adjusted for better mobile view */
 }
 
 form {

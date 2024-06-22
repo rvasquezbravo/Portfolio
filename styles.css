@@ -175,12 +175,13 @@ form button:hover {
 /* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
-    .section-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .section-list {
+        list-style-type: none; /* Remove bullet points */
+        margin-left: 0; /* Remove left margin */
+        padding-left: 0; /* Remove left padding */
     }
 
-    .section-image {
-        margin-bottom: 20px;
+    nav {
+        display: none; /* Hide navigation */
     }
 }

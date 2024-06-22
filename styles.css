@@ -141,8 +141,8 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 60px; /* Default icon width */
-    height: 60px; /* Default icon height */
+    width: 30px; /* Default icon width */
+    height: 30px; /* Default icon height */
     overflow: hidden; /* Ensure the image does not exceed its container */
     background-color: #8b9dc3; /* Background color matching section */
     display: flex;

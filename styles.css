@@ -57,6 +57,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     color: white;
     border-bottom: 10px solid white;
+    text-align: center; /* Center text content */
 }
 
 .section .container {
@@ -77,23 +78,29 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.section-text {
+    margin-bottom: 20px; /* Space below the section title */
+}
+
 .section-list {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 0; /* Remove default margin */
     padding: 0;
     list-style-position: inside; /* Position bullet points inside the list item */
 }
 
 .section-image {
     margin-bottom: 20px; /* Space between image and text */
+    position: relative;
+    overflow: hidden;
+    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 .section-image img {
     max-width: 100%; /* Ensure image fits container */
     height: auto;
     display: block;
-    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
     transition: transform 0.3s ease;
 }
 

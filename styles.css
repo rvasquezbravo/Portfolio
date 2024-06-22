@@ -133,6 +133,31 @@ nav ul li a:hover {
     transform: scale(1.05); /* Scale up on hover */
 }
 
+/* Add styles for social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+}
+
+.social-icon img {
+    width: 100%; /* Ensure the icon fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
 #skills {
     background: #3b5998;
 }

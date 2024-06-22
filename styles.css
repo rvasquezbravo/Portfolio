@@ -196,8 +196,8 @@ footer p {
     }
 
     .section-list {
-        text-align: center; /* Center list items on mobile */
+        text-align: left; /* Align bullet points to the left */
         margin-left: 0; /* Remove left margin for bullet points */
-        padding-inline-start: 0; /* Ensure consistent padding for bullet points */
+        padding-inline-start: 20px; /* Add padding for bullet points */
     }
 }

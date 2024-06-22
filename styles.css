@@ -144,12 +144,12 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure icons take full width of their grid cell */
-    height: 100%; /* Ensure icons take full height of their grid cell */
+    width: 50%; /* Reduced icon size */
+    height: 50%; /* Reduced icon size */
     overflow: hidden; /* Ensure the image does not exceed its container */
     border-radius: 8px; /* Rounded corners for square shape */
     border: 2px solid #333; /* Frame color matching site */
-    background-color: #3b5998; /* Background color matching site */
+    background-color: #8b9dc3; /* Background color matching section */
 }
 
 .social-icon img {
@@ -161,6 +161,10 @@ nav ul li a:hover {
 
 .social-icon:hover {
     transform: scale(1.1); /* Scale up on hover */
+}
+
+.section-title {
+    margin-bottom: 20px; /* Space below the title */
 }
 
 
@@ -237,6 +241,9 @@ footer p {
 @media (max-width: 768px) {
     .social-icons-grid {
         grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+    .social-icon {
+        width: 100%; /* Full width for single column on mobile */
     }
     nav {
         display: none; /* Hide the nav on mobile */

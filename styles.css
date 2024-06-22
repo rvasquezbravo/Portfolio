@@ -65,10 +65,11 @@ nav ul li a:hover {
 }
 
 .section-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex; /* Change to flex layout */
+    flex-direction: column; /* Stack content vertically on mobile */
     gap: 20px;
     align-items: center;
+    text-align: center; /* Center text content */
 }
 
 .section-title {
@@ -87,6 +88,7 @@ nav ul li a:hover {
     overflow: hidden;
     border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
 .section-image img {
@@ -167,4 +169,16 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column; /* Stack content vertically on mobile */
+        text-align: left; /* Align text to the left on mobile */
+    }
+
+    .section-image {
+        order: -1; /* Move image above text on mobile */
+    }
 }

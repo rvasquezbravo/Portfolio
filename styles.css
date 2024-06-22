@@ -69,20 +69,6 @@ nav ul li a:hover {
     margin-bottom: 10px; /* Space between title and list */
 }
 
-.skills-details {
-    display: flex; /* Align items horizontally */
-    justify-content: center; /* Center content horizontally */
-    align-items: flex-start; /* Align items to the top */
-}
-
-.skills-icon-container {
-    margin-right: 20px; /* Space between image and list */
-}
-
-.skills-icon {
-    width: 250px; /* Set image width */
-}
-
 .skills-list {
     list-style-type: disc; /* Use bullets for the list */
     margin-left: 20px; /* Space between bullets and text */

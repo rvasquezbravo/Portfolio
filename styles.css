@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,40 +6,54 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding for mobile responsiveness */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styles */
 header {
     background: url('cybersecurity.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0; /* Adjusted padding for smaller header */
     border-bottom: 10px solid white;
 }
 
-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
+header h1 {
+    font-size: 2.5rem; /* Increased font size for header */
 }
 
+/* Navigation styles */
 nav {
     background: #333;
     border-bottom: 10px solid white;
+    text-align: center; /* Center align navigation items */
+    padding: 10px 0; /* Added padding for mobile responsiveness */
 }
 
 nav ul {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     display: block;
 }
 
@@ -46,60 +61,38 @@ nav ul li a:hover {
     background: #575757;
 }
 
+/* Main content section styles */
+main {
+    padding: 20px 0; /* Added padding for mobile responsiveness */
+}
+
 .section {
-    padding: 60px 20px;
+    padding: 40px 0; /* Adjusted padding for sections */
     color: white;
+    text-align: center; /* Center align section content */
     border-bottom: 10px solid white;
 }
 
-.section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .section-content {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+    margin-top: 20px; /* Added margin for mobile spacing */
 }
 
 .section-title {
-    text-align: left; /* Align title to the left */
-    font-size: 2.5rem; /* Increase font size */
-    margin-bottom: 10px; /* Space between title and list */
+    font-size: 2rem; /* Adjusted font size for section titles */
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .section-list {
-    list-style-type: disc; /* Use bullets for the list */
-    margin-left: 20px; /* Space between bullets and text */
-    padding: 0;
+    text-align: left; /* Align list items to the left */
+    padding-left: 20px; /* Added padding for list items */
 }
 
-#skills {
-    background: #3b5998;
-}
-
-#certifications {
-    background: #8b9dc3;
-}
-
-#locations {
-    background: #dfe3ee;
-    color: #333;
-}
-
-#projects {
-    background: #3b5998;
-}
-
-#social {
-    background: #8b9dc3;
-}
-
+/* Contact section styles */
 #contact {
     background: #dfe3ee;
     color: #333;
-    padding: 60px 20px; /* Adjust padding for contact form */
+    padding: 60px 20px; /* Adjusted padding for contact form */
+    text-align: left; /* Align text to the left */
 }
 
 form {
@@ -133,6 +126,7 @@ form button:hover {
     background: #575757;
 }
 
+/* Footer styles */
 footer {
     background: #333;
     color: white;

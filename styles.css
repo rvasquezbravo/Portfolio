@@ -36,24 +36,6 @@ header img {
     margin-top: 20px;
 }
 
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
-.header-content h1 {
-    font-size: 3rem;
-    margin-bottom: 300px;
-}
-
-.header-content p {
-    font-size: 1.8rem; /* Adjusted font size */
-    margin: 0;
-}
-
 nav {
     background: #333;
     border-bottom: 10px solid white;

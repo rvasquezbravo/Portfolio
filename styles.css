@@ -75,10 +75,22 @@ nav ul li a:hover {
     padding: 0;
 }
 
+.section-image {
+    position: relative; /* Ensure container for image */
+    overflow: hidden; /* Hide overflow for border */
+}
+
 .section-image img {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 5px solid #fff; /* White border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.section-image img:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 #skills {

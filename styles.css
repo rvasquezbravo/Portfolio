@@ -57,19 +57,19 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.skills-content {
+.section-content {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the left */
 }
 
-.skills-title {
+.section-title {
     text-align: left; /* Align title to the left */
     font-size: 2.5rem; /* Increase font size */
     margin-bottom: 10px; /* Space between title and list */
 }
 
-.skills-list {
+.section-list {
     list-style-type: disc; /* Use bullets for the list */
     margin-left: 20px; /* Space between bullets and text */
     padding: 0;
@@ -116,31 +116,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    background: #333;
-    color: white;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #575757;
 }

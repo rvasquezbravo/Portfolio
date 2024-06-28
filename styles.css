@@ -253,6 +253,7 @@ footer p {
     .social-icon {
         width: 40%; /* Full width for single column on mobile */
     }
+	
     nav {
         display: none; /* Hide the nav on mobile */
     }
@@ -274,6 +275,7 @@ footer p {
         margin-left: 0; /* Remove left margin for bullet points */
         padding-inline-start: 20px; /* Add padding for bullet points */
     }
+	
        .social-icons {
         flex-wrap: wrap; /* Allow wrapping for social icons */
     }

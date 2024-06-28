@@ -251,24 +251,6 @@ footer p {
         display: none; /* Hide the nav on mobile */
     }
 
-    header {
-        height: auto; /* Auto height for better flexibility */
-        padding: 30px 0; /* Adjusted padding */
-    }
-
-    header img {
-        width: 120px; /* Further reduced size for mobile */
-        height: 120px;
-    }
-
-    header h1 {
-        font-size: 2rem; /* Adjusted font size */
-    }
-
-    header p {
-        font-size: 1.2rem; /* Adjusted font size */
-    }
-
     .section-content {
         text-align: center;
     }

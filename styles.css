@@ -10,9 +10,9 @@ header {
     background: url('cybersecurity-background-old.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0; /* Adjusted padding */
     border-bottom: 10px solid white;
-    height: 60vh; /* Example height, adjust as needed */
+    height: 40vh; /* Reduced height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +28,8 @@ header .container {
 }
 
 header img {
-    width: 250px; /* Increased size of profile picture */
-    height: 250px; /* Increased size of profile picture */
+    width: 150px; /* Reduced size for profile picture */
+    height: 150px; /* Reduced size for profile picture */
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
@@ -37,17 +37,17 @@ header img {
 }
 
 header h1 {
-    font-size: 3.5rem; /* Larger font size */
-    margin-bottom: 5px; /* Reduced space between h1 and p */
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-bottom: 5px;
     color: white;
-    font-family: 'Lobster', cursive; /* Apply Lobster font */
+    font-family: 'Lobster', cursive;
 }
 
 header p {
-    font-size: 2.5rem; /* Larger font size */
-    margin-top: 5px; /* Reduced space between h1 and p */
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-top: 5px;
     color: white;
-    font-weight: bold; /* Make the font bold */
+    font-weight: bold;
 }
 
 nav {
@@ -79,10 +79,10 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 40px 20px; /* Adjusted padding */
     color: white;
     border-bottom: 10px solid white;
-    text-align: center; /* Center text content */
+    text-align: center;
 }
 
 .section .container {
@@ -91,87 +91,89 @@ nav ul li a:hover {
 }
 
 .section-content {
-    display: flex; /* Flex layout */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted font size */
     margin-bottom: 10px;
 }
 
 .section-text {
-    margin-bottom: 20px; /* Space below the section title */
-    text-align: left; /* Align text content to the left */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .section-list {
     list-style-type: disc;
-    margin-left: 20px; /* Adjusted left margin for bullet points */
+    margin-left: 20px;
     padding: 0;
 }
 
 .section-image {
-    margin-bottom: 20px; /* Space between image and text */
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    border: 8px solid #8b9dc3; /* Adjusted color related to other colors */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border: 8px solid #8b9dc3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .section-image img {
-    max-width: 100%; /* Ensure image fits container */
+    max-width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
 
 .section-image img:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05);
 }
 
-/* Add styles for social icons grid */
-.social-icons-grid {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Gap between icons */
-}
+/* Add styles for social icons */
 
-.social-icon {
-    width: 5px; /* Default icon width */
-    height: 5px; /* Default icon height */
-    overflow: hidden; /* Ensure the image does not exceed its container */
-    background-color: #8b9dc3; /* Background color matching section */
+.social-icons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px; /* Rounded corners for rectangle */
+    padding: 0;
+    gap: 20px; /* Adjusted gap */
+    margin-top: -15px;
 }
 
-.linkedin-icon {
-    width: 10%; /* 60% of the .social-icon width */
-    height: auto; /* Maintain aspect ratio */
+.social-icons li {
+    list-style: none;
 }
 
 .social-icon img {
-    max-width: 100%; /* Ensure the icon fills its container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-    transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adjusted padding */
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    background-color: red;
+    border-radius: 10px;
 }
 
 .section-title {
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center text */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+.social-icons #Linkedin img {
+    background-color: #0077b0;
+}
+
+.social-icons #Github img {
+    background-color: #23272d;
+}
+
+.social-icons #Platzi img {
+    background-color: #51C120;
+}
 
 #skills {
     background: #3b5998;
@@ -232,7 +234,7 @@ form button:hover {
 }
 
 footer {
-    background: #333; /* Same as nav background color */
+    background: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -244,18 +246,31 @@ footer p {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
-    .social-icons-grid {
-        grid-template-columns: 1fr; /* Single column layout on mobile */
-    }
-    .social-icon {
-        width: 40%; /* Full width for single column on mobile */
-    }
+
     nav {
         display: none; /* Hide the nav on mobile */
     }
 
+    header {
+        height: auto; /* Auto height for better flexibility */
+        padding: 30px 0; /* Adjusted padding */
+    }
+
+    header img {
+        width: 120px; /* Further reduced size for mobile */
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjusted font size */
+    }
+
+    header p {
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+
     .section-content {
-        text-align: center; /* Center text */
+        text-align: center;
     }
 
     .section-image {
@@ -263,12 +278,22 @@ footer p {
     }
 
     .section-text {
-        text-align: center; /* Center text content on mobile */
+        text-align: center;
     }
 
     .section-list {
-        text-align: left; /* Align bullet points to the left */
-        margin-left: 0; /* Remove left margin for bullet points */
-        padding-inline-start: 20px; /* Add padding for bullet points */
+        text-align: left;
+        margin-left: 0;
+        padding-inline-start: 20px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap; /* Allow wrapping for social icons */
+    }
+
+    .social-icon img {
+        width: 30px; /* Adjusted size */
+        height: 30px;
+        padding: 5px; /* Adjusted padding */
     }
 }
